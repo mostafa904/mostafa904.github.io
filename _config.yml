@@ -1,22 +1,19 @@
-title: example.com
+title: Mostafa Ashraf 0x
 description: "Satellite - jekyll blog theme"
 logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.webp"
 
 # Social Links
-email: example@gmail.com
-github_username: github
-twitter_username: twitter
-instagram_username: instagram
-linkedin_username: linkedin
-facebook_username: facebook
+email: mostafa.nada1221@gmail.com
+github_username: mostafa904
+linkedin_username: mostafa-ashraf-17114a1aa
 
 # External API
-giscus_repo: "byanko55/jekyll-theme-satellite"
+giscus_repo: "mostafa904/mostafaashraf.github.io"
 giscus_repoId: "R_kgDOJ6fqWg"
 giscus_category: "Q&A"
 giscus_categoryId: "DIC_kwDOJ6fqWs4Cc7p7"
-goatcounter_code: byanko77
+goatcounter_code: 
 google_analytics:
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
