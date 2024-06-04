@@ -94,7 +94,7 @@ to List User’s Privileges:
 Now we see that we have root access at `/bin/tar` command.
  After searching about how can i exploit this to read file from root,I found this:
 
-[tar | GTFOBins](https://gtfobins.github.io/gtfobins/tar/)
+<a href="https://gtfobins.github.io/gtfobins/tar/"</a>
 
 
 <img src="/assets/img/machines/bounty_hacker/gtf.jpg" alt="Bounty Hacker">
