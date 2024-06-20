@@ -11,7 +11,7 @@ bookmark: true
 ---
 bepractical.tech. It's a platform that offers various challenges and labs for cybersecurity enthusiasts and bug hunters to practice their skills. The site provides hands-on experience with real-world scenarios, allowing users to test and improve their abilities in finding and exploiting vulnerabilities.
 ---
-# Login
+## Login
 
 First we will login with the credentials given 
 `john@bepractical.tech:john@123`
@@ -31,6 +31,8 @@ When we logged in with the given credentials, the response was `MQ==`, which is 
 If we change the email parameter to `admin@bepractical.tech`, the response will be `ZmFsc2U=`, which means `false`.
 
 <img src="/assets/img/bepractical/lab1/4.png" alt="burp2">
+
+## Response Manipulation
 
 Immediately, I thought about `response manipulation`.
 
