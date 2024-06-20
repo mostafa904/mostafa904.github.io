@@ -43,4 +43,4 @@ So, I went back and intercepted the request. I changed the email to `admin@bepra
 Now, turn intercept off, then go back to Firefox.
 <img src="/assets/img/bepractical/lab1/admin.png" alt="admin">
 
-GG lab is solved 
+GG lab is solved. 
