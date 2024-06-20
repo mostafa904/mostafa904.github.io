@@ -4,6 +4,6 @@ tags:
     - Lab
     - Bepractical
 date: "2024-06-20"
-thumbnail: "/assets/img/bepractical/lab1/1.png"
+thumbnail: "/assets/img/thumbnail/labs.png"
 bookmark: true
 ---
