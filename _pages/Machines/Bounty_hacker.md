@@ -13,9 +13,6 @@ bookmark: true
 
 <img src="/assets/img/thumbnail/bounty_hacker.jpeg" alt="Bounty Hacker">
 
----
-
-# Bounty Hacker Write-up
 
 Hello guys, today we’ll talk about one of the TryHackMe rooms called “Bounty Hacker”. It’s a quite easy room in which you’ll learn about:
 
@@ -24,6 +21,7 @@ Hello guys, today we’ll talk about one of the TryHackMe rooms called “Bounty
 - How you can do privilege escalation with the help of the tar command.
 
 So, let’s get into it.
+---
 
 ## Recon
 
