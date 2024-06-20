@@ -9,7 +9,7 @@ bookmark: true
 ---
 ## Description
 
-in this lab he want me to takeOver admin account and didnt gave me any credentials to login with
+In this lab, they want me to take over the admin account but didn't provide any credentials for logging in
 
 ## Sign up
 
