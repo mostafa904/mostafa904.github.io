@@ -10,7 +10,7 @@ bookmark: true
 ## Description
 
 As usual, try logging in with `admin@bepractical.tech`.
-first register new account and login nothing new go back let's check reset password function 
+first register new account and login nothing new. So, let's check reset password function 
 
 ## Reset Password 
 
@@ -22,31 +22,29 @@ ok now check the email to see the otp
 
 <img src="/assets/img/bepractical/lab4/2.png" alt="reset link">
 
-but this time there is a reset link not otp like previous labs so lets copy the link to check it 
+But this time, there is a reset link instead of an OTP like in previous labs. So, let's copy the link to check it
 
 ## Crack The Hash
 
 <img src="/assets/img/bepractical/lab4/3.png" alt="link">
 
-i noticed the term `Secret_key` followed by a value i think this is some kind of hash 
-first i think to crack this hash in crack station website but i didnt got the value 
-->32bit so i think its `MD5` to be sure i took this value to hash analyzer and yes its md5 
+I noticed the term `Secret_key` followed by a value. I think this is some kind of hash. At first, I considered cracking this hash on the CrackStation website, but I didn't get the value. Since it's `32-bit`, I thought it might be `MD5`. To be sure, I took this value to a hash analyzer, and yes, it's `MD5`.
 
-i think that this hash is something relative to the user So we can try various strings like name, username, email address, phone number, password…etc.
+I think this hash is something related to the user. So, we can try various strings like name, username, email address, phone number, password, etc.
 
-Trying the email address used to login, I got a match
+By trying the email address used to log in, I got a match
 
 <img src="/assets/img/bepractical/lab4/4.png" alt="hash match">
 
-We now go back to the `Forgot Password` functionality and type in the admin account email and click `send`
+We now go back to the `Forgot Password` functionality, type in the admin account email, and click `send`
 
 <img src="/assets/img/bepractical/lab4/5.png" alt="reset admin">
 
-So now lets us get the hash for the admin account email address we are trying to takeover.
+"So now, let's get the hash for the admin account email address we are trying to take over."
 
 <img src="/assets/img/bepractical/lab4/6.png" alt="admin hash">
 
-let's take the admin hash as `secret_key` and copy the link then paste it in firefox 
+let's take the admin hash as `secret_key` then copy the link and paste it in firefox 
 
 <img src="/assets/img/bepractical/lab4/7.png" alt="admingg">
 
