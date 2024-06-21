@@ -1,5 +1,5 @@
 ---
-title: "Account TakeOver Lab4"
+title: "Account TakeOver Lab6"
 tags:
     - Lab
     - Bepractical
