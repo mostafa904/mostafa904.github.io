@@ -4,7 +4,7 @@ tags:
     - Lab
     - Root Me
 date: "2024-06-22"
-thumbnail: "/assets/img/thumbnail/rootme.png"
+thumbnail: "/assets/img/thumbnail/sqli.jpg"
 bookmark: true
 ---
 ## Description

