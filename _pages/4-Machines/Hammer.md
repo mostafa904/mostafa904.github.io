@@ -6,7 +6,7 @@ tags:
     - Auth Bypass
     - JWT
 date: "2024-09-16"
-thumbnail: "/assets/img/hammer/thumb.png"
+thumbnail: "/assets/img/thumbnail/thumb.png"
 bookmark: true
 ---
 # Description
@@ -211,3 +211,4 @@ Nice, now i can read the content of the file `/home/ubuntu/flag.txt`
 <img src="/assets/img/hammer/19.png">
 
 Honestly, this was an awesome machine, and I learned a lot from it. I hope you enjoy this walkthrough!
+---
