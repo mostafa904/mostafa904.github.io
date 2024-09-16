@@ -199,7 +199,7 @@ so let's go back to the burp and change the signature of the jwt
 let's analysis the jwt on JWT.io , i found that :
 `kid` take a file-> can put 188ade1.key file
 `role` is `user` -> can change it to admin
-first let's pass the file to it and it's content to signature
+first let's pass the file to `kid` and it's content to signature
 <img src="/assets/img/hammer/16.png">
 here we go 
 <img src="/assets/img/hammer/17.png">
@@ -209,6 +209,4 @@ now change the role to admin and send the request with `id` command
 
 Nice, now i can read the content of the file `/home/ubuntu/flag.txt`
 <img src="/assets/img/hammer/19.png">
-
-Honestly, this was an awesome machine, and I learned a lot from it. I hope you enjoy this walkthrough!
----
+ Honestly, this was an awesome machine, and I learned a lot from it. I hope you enjoy this walkthrough!
