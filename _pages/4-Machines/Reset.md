@@ -4,7 +4,7 @@ tags:
     - machine
     - THM
     - Active Directory
-date: "2024-09-16"
+date: "2024-09-22"
 thumbnail: "/assets/img/thumbnail/reset.jpeg"
 bookmark: true
 ---
@@ -89,7 +89,7 @@ smb: \> dir onboarding\
 the file name changing every time 
 I notice that I can do activity in the share,so i can put file that allows us to steal user's hash
 
-# Steal NTLM Creds
+## steal automate Creds
 i found this tip on `hacktricks`
 <img src="/assets/img/reset/1.png">
  i ask chatgpt how to do this and here the steps to steal the user hash
